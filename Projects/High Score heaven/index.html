@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Style.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <title>High Score</title>
+    
+</head>
+<body>
+    
+    <h1>High Score</h1>
+<!--    <button id="addBtn">Add Score</button>-->
+    
+    <ul id="scoreList">    
+    </ul>
+    
+    <div class="myform"> </div>
+    <form>
+         Name  <input type="text" class="input" name="name"> 
+         Game  <select  id="game" name="game">
+        <option value="Clash Of Clans">Clash Of Clans</option>
+        <option value="Clash Royale">Clash Royale</option>
+        <option value="Counter-Strike GO">Counter-Strike GO</option>
+        <option value="Rocket League">Rocket League</option>
+    </select>
+        High Score <input id="input2" type="text" name="highscore">
+        
+        Date  <input name="date" id="input3" type="date"> 
+       
+
+    </form>
+           <br>
+    <button id="submit"> Submit</button>
+    <br>
+    
+    <table>
+        <tr>
+            <th>name</th>
+            <th>game</th>
+            <th>high score</th>
+            <th>date </th>
+        </tr>
+        <br>
+    </table>
+
+  <script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>      
+  <script src="script.js"></script>
+</body>
+</html>
