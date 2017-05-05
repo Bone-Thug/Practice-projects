@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<span>search</span><input type="text" ng-model="filterText.rank">
+<body>
+<h1>Clash of Clans</h1>
+   <table class="container" ng-controller="mainCtrl">
+       <tr>
+           <th>handle</th>
+           <th>rank</th>
+           <th>clan</th>
+       </tr>
+       <tr ng-repeat="person in player.kills | filter:filterText">
+          <td>{{person.handle}}</td>
+          <td>{{person.rank}}</td>
+          
+          <td>
+              <ul ng-repeat= "people in person.clan">
+            <li >{{people}}</li>
+              </ul>
+          </td>
+       </tr>
+       
+   </table>
+     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+     <script src="script.js"></script>
+
+</body>
+</html>
